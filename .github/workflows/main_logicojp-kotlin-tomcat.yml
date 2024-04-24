@@ -24,7 +24,7 @@ jobs:
       - name: Build with Maven
         run: |
           mvn clean install -DskipTests
-          mv target/demoapiwar-0.0.1-SNAPSHOT.war target/ROOT.war
+          mv target/demoapiwar-0.0.1-SNAPSHOT.war target/hello.war
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
